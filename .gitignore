@@ -1,0 +1,73 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnp/
+.pnp.js
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+logs/
+*.log
+
+# Build artifacts
+# For the React client application
+client/build/
+client/dist/
+
+# For the Node.js server (if transpiled or bundled)
+server/dist/
+
+# Dependency caches
+.npm/
+.yarn-cache/
+
+# Editor directories and files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Test coverage reports
+coverage/
+.nyc_output/
+
+# Miscellaneous
+*.pid
+*.seed
+*.patch
+*.sqlite
+*.sqlite-journal
+
+# Specific to create-react-app
+# https://create-react-app.dev/docs/adding-custom-environment-variables/#what-other-env-files-can-be-used
+client/.env.development
+client/.env.test
+client/.env.production
+
+# Ignore client-side node_modules and server-side node_modules
+# if they are not at the root level.
+# This is a common setup for monorepos or projects with separate client/server packages.
+client/node_modules/
+server/node_modules/
+
+# Yarn Plug'n'Play
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.*

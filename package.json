@@ -1,0 +1,41 @@
+```json
+{
+  "name": "personal-blog-platform",
+  "version": "1.0.0",
+  "description": "A personal blog platform, part of a larger microservice ecosystem including a Recipe Unit Converter, Real-time Weather Dashboard, Custom URL Shortener, Interactive E-commerce Product Catalog, and AI-Powered Content Assistant.",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "dev": "concurrently \"npm run dev --prefix server\" \"npm run start --prefix client\"",
+    "server": "npm run start --prefix server",
+    "client": "npm run start --prefix client",
+    "install-all": "npm install && npm install --prefix client && npm install --prefix server",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "echo \"Linting not yet configured for root, see client/ and server/ for their respective configs.\"",
+    "build": "npm run build --prefix client"
+  },
+  "keywords": [
+    "blog",
+    "cms",
+    "react",
+    "nodejs",
+    "express",
+    "mongodb",
+    "javascript",
+    "microservice",
+    "recipe-converter",
+    "weather-dashboard",
+    "url-shortener",
+    "ecommerce-catalog",
+    "ai-content-assistant"
+  ],
+  "author": "Your Name/Organization",
+  "license": "MIT",
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
+```

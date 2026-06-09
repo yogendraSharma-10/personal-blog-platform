@@ -1,0 +1,53 @@
+```json
+{
+  "name": "personal-blog-platform-client",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "axios": "^1.6.8",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.22.3",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "lint": "eslint src/**/*.js",
+    "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx,json,css,scss,md}\""
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "proxy": "http://localhost:5000"
+  // Note: For production deployments, ensure the proxy is configured correctly
+  // or API calls are made to the absolute URL of the backend server.
+  //
+  // Cross-Project Context:
+  // API endpoints for other services (e.g., Recipe Unit Converter, Weather Dashboard,
+  // URL Shortener, E-commerce Catalog, AI Content Assistant) would typically be
+  // configured via environment variables (e.g., REACT_APP_RECIPE_API_URL)
+  // and consumed by Axios or fetch in the client-side code.
+}
+```
